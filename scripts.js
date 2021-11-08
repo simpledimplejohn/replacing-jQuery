@@ -52,9 +52,16 @@
 // box.appendChild(newElement); // puts in the "a" tag
 // newElement.setAttribute("href", "https://en.wikipedia.org/wiki/Potato")
 
-// APPENDING THE NEW WAY
+// APPENDING THE NEW WAY Does not support internet explorer
 // let box = document.querySelector(".box") //grab the box div to put everything in
 // let newElement = document.createElement("a") // makes <a></a>
 // newElement.append("Potato Link")
 // box.appendChild(newElement)
 // newElement.setAttribute("href", "https://en.wikipedia.org/wiki/Potato")
+
+
+//////////// CSS ///////////////////
+
+document.querySelector("h1").style.color = "blue"
+document.querySelector("h1").style.cssText = "color: red; font-size: 100px"
+
