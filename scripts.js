@@ -45,5 +45,12 @@
 
 // APPENDING
 // Create element, create content, put content in element, put all in DOM
+let box = document.querySelector(".box"); //where its going
+let newElement = document.createElement("a"); //creates "a" tag
+let newText = document.createTextNode("potato link") // link text
+newElement.appendChild(newText); // puts the text in
+box.appendChild(newElement); // puts in the "a" tag
+newElement.setAttribute("href", "www.potato.com")
+
 
 
