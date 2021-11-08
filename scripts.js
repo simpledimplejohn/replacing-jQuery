@@ -43,14 +43,18 @@
 // document.querySelector("#potato-id").setAttribute("href", "www.google.com")
 // document.querySelector("#potato-id").removeAttribute("href")
 
-// APPENDING
+// APPENDING THE OLD WAY
 // Create element, create content, put content in element, put all in DOM
-let box = document.querySelector(".box"); //where its going
-let newElement = document.createElement("a"); //creates "a" tag
-let newText = document.createTextNode("potato link") // link text
-newElement.appendChild(newText); // puts the text in
-box.appendChild(newElement); // puts in the "a" tag
-newElement.setAttribute("href", "www.potato.com")
+// let box = document.querySelector(".box"); //where its going
+// let newElement = document.createElement("a"); //creates "<a></a>" tag
+// let newText = document.createTextNode("potato link") // text inside the <a>tag</a>
+// newElement.appendChild(newText); // puts the text in
+// box.appendChild(newElement); // puts in the "a" tag
+// newElement.setAttribute("href", "https://en.wikipedia.org/wiki/Potato")
 
-
-
+// APPENDING THE NEW WAY
+// let box = document.querySelector(".box") //grab the box div to put everything in
+// let newElement = document.createElement("a") // makes <a></a>
+// newElement.append("Potato Link")
+// box.appendChild(newElement)
+// newElement.setAttribute("href", "https://en.wikipedia.org/wiki/Potato")
