@@ -1,14 +1,18 @@
 let btn = document.querySelector(".test-btn");
-let form = document.querySelector(".test-form");
 
-function changeBtnText(e) {
-  e.preventDefault();
+
+function firstFunction() {
+
   btn.innerHTML = "YAY!";
 }
-
-function stopFormSubmit(e) {
-  e.preventDefault();
+function secondFunction() {
+  btn.style.backgroundColor = "red";
 }
 
-btn.onclick = changeBtnText;
-form.onclick = stopFormSubmit;
+function buttonClick(e) {
+  e.preventDefault();
+  firstFunction();
+  secondFunction();
+}
+btn.onclick = buttonClick; //event handler
+
